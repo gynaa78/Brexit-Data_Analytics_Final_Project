@@ -3,24 +3,31 @@
 ABOUT ME : I have worked in varied job roles such as a research assistant, a media and digital contents manager that involved the management and/or analysis of data. 
 I have found the collection of data, and analysing them to draw meaningful and informative conclusions fulfilling. I wish to now work in a data analyst or data engineer role to enable me make informed data analysis, predictions and presentations to assist organisations to embark on successful ventures and solve rising issues.
 
+ABOUT THIS PROJECT:
 
-A referendum was held on the 23 June 2016 to decide whether the United Kingdom should remain a member of the European Union or leave. This project looks into Brexit to analyse findings  using EXCEL, Tableau, PowerBI, SQL, & Python  to draw meaningful conclusions from related databases as appended.
+A referendum was held on the 23 June 2016 to decide whether the United Kingdom should remain a member of the European Union or leave. This project looks into Brexit to analyse findings  using EXCEL, Tableau, PowerBI, & MySQL to draw meaningful conclusions from related databases as appended.
 
 BELOW ARE EXCERPTS FROM THE CONTENTS OF THIS REPOSITORY.
 
-EXCEL : The dataset constituted two tables  - Referendum and Census.
 
-The analysis shown below can be found below the referendum Excel sheet as attached in this repository. 
+EXCEL :  The uploaded EXCEL file is named as referendum analysis for Final Data Project.xls
 
-To analyse the excel data, aside using the Sum, AVG, MIN and MAX formulas, I used statistical formulas like:
+The dataset constituted two tables  - Referendum and Census.
+
+The analysis shown below can be found at the end of the file as attached in this repository. 
+
+To analyse the excel data, aside using the Sum, AVG, MIN and MAX formulas, I used statistical formulas like INDEX MATCH, IF and COUNTIF as shown below:
+
 
  =INDEX(E2:E383, MATCH(MAX(I2:I383),I2:I383,0)) to look for the area with maximum percent turnout which happened to be Gibraltar
 
 Using =INDEX(E2:E383, MATCH(MIN(I2:I383),I2:I383,0)) to look for the area with minimum percent turnout revealed it was  Glasgow City.
 
+
 I also used the IF formula below to create a new column - COLUMN V, to show whether an area voted REMAIN or LEAVE :
 
 =IF(T2 >S2, "Leave", "Remain")
+
 
 To count the number of areas that voted leave, I used the COUNTIF formula: =COUNTIF(V2:V383,"Leave"), which gave the answer 263
 
@@ -29,9 +36,10 @@ And to count the number of areas that voted remain, I used =COUNTIF(V2:V383,"<>L
 
 
 
-Structured Query Language
+Structured Query Language (SQL)
 
 I used MYSQL in Workbench as attached in this repository to issue queries on the given data and arrive at meaningful conclusions to analyse the data.
+
 Some of the SQL Queries I used are as follows:
 
 First of all I used 'table data import wizard' under 'Schemas' to create a new_schema with the needed data under the table names referendum and census, before exploring the data using SQL queries.
