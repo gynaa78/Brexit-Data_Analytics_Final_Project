@@ -97,8 +97,8 @@ LIMIT 5;
 Gibraltar	        95.91
 Lambeth	          78.62
 Hackney	          78.48
-Haringey	        75.57
-City of London	  75.29
+Haringey	         75.57
+City of London	   75.29
 
 
 
@@ -114,10 +114,10 @@ LIMIT 5;
 Area	           Percent_Leave
 
 Boston	         75.56
-South Holland	   73.59
+South Holland	  73.59
 Castle Point	   72.7
 Thurrock	       72.28
-Great Yarmouth	  71.5
+Great Yarmouth	 71.5
 
 
 -- Finding out the various regions and their average, maximum and minimum percentage TURNOUT 
@@ -133,11 +133,11 @@ ORDER BY region;
 Northern Ireland	          63	              62.69	               62.69
 North East	                69	              74.35	               64.86
 Scotland	                  69	              76.13	               56.25
-Wales	                      72	              77.74	               67.39
+Wales	                     72	              77.74	               67.39
 North West	                71	              79.78	               59.77
-West Midlands	              75	              80.88	               63.81
+West Midlands	             75	              80.88	               63.81
 Yorkshire and The Humber	  72	              81.02	               62.94
-East Midlands	              75	              81.92	               61.82
+East Midlands	             75	              81.92	               61.82
 London	                    70	              82.09	               59.25
 East	                      76	              82.51	               66.31
 South East	                77	              83.57	               62.13
