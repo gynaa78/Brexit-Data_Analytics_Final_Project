@@ -10,33 +10,28 @@ A referendum was held on the 23 June 2016 to decide whether the United Kingdom s
 BELOW ARE EXCERPTS FROM THE CONTENTS OF THIS REPOSITORY (For a better read and view of the tables attached, click on Raw).
 
 
+
 EXCEL :  The uploaded EXCEL file is named as referendum analysis for Final Data Project.xls
 
 The dataset constituted two tables  - Referendum and Census.
 
 The analysis shown below can be found at the end of the file as attached in this repository. 
 
-To analyse the excel data, aside using the Sum, AVG, MIN and MAX formulas, I used statistical formulas like INDEX MATCH, IF and COUNTIF as shown below:
+To analyse the excel data, aside using the Sum, AVG, MIN and MAX formulas, I used statistical formulas like INDEX MATCH, IF and COUNTIF.
 
 
- =INDEX(E2:E383, MATCH(MAX(I2:I383),I2:I383,0)) to look for the area with maximum percent turnout which happened to be Gibraltar
+ I used INDEX MATCH to look for the area with maximum percent turnout which happened to be Gibraltar, and to look for the area with minimum percent turnout which was Glasgow City.
 
-Using =INDEX(E2:E383, MATCH(MIN(I2:I383),I2:I383,0)) to look for the area with minimum percent turnout revealed it was  Glasgow City.
+I also used the IF formula below to create a new column - COLUMN V, to show whether an area voted REMAIN or LEAVE.
 
+To count the number of areas that voted leave, I used the COUNTIF formula which gave the answer 263
 
-I also used the IF formula below to create a new column - COLUMN V, to show whether an area voted REMAIN or LEAVE :
-
-=IF(T2 >S2, "Leave", "Remain")
-
-
-To count the number of areas that voted leave, I used the COUNTIF formula: =COUNTIF(V2:V383,"Leave"), which gave the answer 263
-
-And to count the number of areas that voted remain, I used =COUNTIF(V2:V383,"<>Leave") which gave the answer 119
+And to count the number of areas that voted remain, COUNTIF gave the answer 119
 
 
 
 
-Structured Query Language (SQL)
+STRUCTURED QUERY LANGUAGE (SQL)
 
 I used MYSQL in Workbench as attached in this repository to issue queries on the given data and arrive at meaningful conclusions to analyse the data.
 
@@ -46,26 +41,15 @@ First of all I used 'table data import wizard' under 'Schemas' to create a new_s
 
 SOME OF THE RETRIEVED SOLUTIONS TO THE QUERIES ARE AS BELOW:
 
--- Top five areas that supported Remain
+-- Top five areas that supported Remain with their Percent_Leave
 
-Gibraltar	        95.91
-Lambeth	          78.62
-Hackney	          78.48
-Haringey	         75.57
-City of London	   75.29
+Gibraltar	: 95.91, Lambeth : 78.62, Hackney : 78.48, Haringey : 75.57, City of London	: 75.29
 
 
+-- Top five areas that supported leave with their Percent_Leave
 
--- Top five areas that supported leave
+Boston: 75.56, South Holland: 73.59, Castle Point:	72.7, Thurrock:	 72.28, Great Yarmouth:	 71.5
 
-
-Area	           Percent_Leave
-
-Boston	         75.56
-South Holland	  73.59
-Castle Point	   72.7
-Thurrock	       72.28
-Great Yarmouth	 71.5
 
 
 DATA VISUALISATIONS
