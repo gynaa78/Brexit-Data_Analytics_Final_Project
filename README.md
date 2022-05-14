@@ -5,7 +5,7 @@ I have found the collection of data, and analysing them to draw meaningful and i
 
 ABOUT THIS PROJECT:
 
-A referendum was held on the 23 June 2016 to decide whether the United Kingdom should remain a member of the European Union or leave. This project looks into Brexit to analyse findings  using EXCEL, Tableau, PowerBI, & MySQL to draw meaningful conclusions from related databases as appended.
+A referendum was held on the 23 June 2016 to decide whether the United Kingdom should remain a member of the European Union or leave. This project looks into Brexit to analyse findings  using EXCEL, Tableau, PowerBI, MySQL, & Python (Pandas & Seaborn) to draw meaningful conclusions from related databases as appended.
 
 BELOW ARE EXCERPTS FROM THE CONTENTS OF THIS REPOSITORY (For a better read and view of the tables attached, click on Raw).
 
