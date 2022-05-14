@@ -40,59 +40,13 @@ Structured Query Language (SQL)
 
 I used MYSQL in Workbench as attached in this repository to issue queries on the given data and arrive at meaningful conclusions to analyse the data.
 
-Some of the SQL Queries I used are as follows:
-
 First of all I used 'table data import wizard' under 'Schemas' to create a new_schema with the needed data under the table names referendum and census, before exploring the data using SQL queries.
-
--- Finding out how each area voted REMAIN and LEAVE percentage wise, and whether REMAIN or LEAVE won the day
-
-SELECT area, Percent_remain,Percent_leave,
-CASE
-WHEN Percent_remain > Percent_leave THEN 'Remain Won'
-WHEN Percent_leave > Percent_remain THEN 'Leave Won'
-ELSE 'OTHER'
-END AS "WHO WON?"
-FROM referendum;
-
            
--- I identified 'area' as what connects both tables and can therefore be joined by AREA as shown below
-
-SELECT * FROM referendum ref
-INNER JOIN census cen
-ON ref.area = cen.area;
-
--- Exploring Joins: From the joined table, selecting each area and district type from the census table; 
--- Then selecting the region, number of electorates and how many electorates voted remain or leave from the referendum table in each area of the census table.
-
-SELECT cen.area, cen.type, ref.electorate, ref.region, ref.remain, ref.leave
-FROM census cen
-INNER JOIN referendum ref
-ON cen.area = ref.area;
-
+-- I identified 'area' as what connects both tables and therefore joined the two tables by AREA.
 
 SOME OF THE RETRIEVED SOLUTIONS TO THE QUERIES ARE AS BELOW:
 
-
--- Finding the average leave percentage and average remain percentage
-
-SELECT 
-ROUND(AVG(percent_leave),2) AS 'Percentage of Leavers',
-  ROUND(AVG(Percent_Remain),2) AS 'Percentage of Remainers'
-FROM referendum;
-
-Percentage of Leavers.           Percentage of Remainers
-      52.99                                 47.01
-
-
-
 -- Top five areas that supported Remain
-
-SELECT Area, Percent_Remain
-FROM referendum
-WHERE  Percent_remain > Percent_Leave
-ORDER BY percent_remain DESC
-LIMIT 5;
- Area	Percent_Remain
 
 Gibraltar	        95.91
 Lambeth	          78.62
@@ -103,12 +57,6 @@ City of London	   75.29
 
 
 -- Top five areas that supported leave
- 
-SELECT Area, Percent_Leave
-FROM referendum
-WHERE Percent_Leave > Percent_remain
-ORDER BY percent_leave DESC
-LIMIT 5;
 
 
 Area	           Percent_Leave
@@ -120,38 +68,14 @@ Thurrock	       72.28
 Great Yarmouth	 71.5
 
 
--- Finding out the various regions and their average, maximum and minimum percentage TURNOUT 
-
-SELECT region, ROUND(AVG(percent_turnout)) AS 'Average % turnout', MAX(percent_turnout), MIN(percent_turnout)
-FROM referendum
-GROUP BY region
-ORDER BY region; 
-
-
-
-# region	       Average % turnout	MAX(percent_turnout)	MIN(percent_turnout)
-Northern Ireland	          63	              62.69	               62.69
-North East	                69	              74.35	               64.86
-Scotland	                  69	              76.13	               56.25
-Wales	                     72	              77.74	               67.39
-North West	                71	              79.78	               59.77
-West Midlands	             75	              80.88	               63.81
-Yorkshire and The Humber	  72	              81.02	               62.94
-East Midlands	             75	              81.92	               61.82
-London	                    70	              82.09	               59.25
-East	                      76	              82.51	               66.31
-South East	                77	              83.57	               62.13
-South West	                78	              83.64	               69.3
-
-
 DATA VISUALISATIONS
 
-
 I used mostly POWERBI for the data visualisation and made use of its Q & A function as well as its Smart Narrative to analyse the data.
-However, I used tableau to create an area map of UK to show the average percent LEAVE and the average percent REMAIN for BREXIT. 
-Also a different dataset was used for the Tableau map. 
+However, I also used Pandas, Seaborn and tableau to create additional visualisations such as using tableau to create an area map of UK to show the average percent LEAVE and the average percent REMAIN for BREXIT.
 
-All the datasets are attached in this repository.
+A different dataset was used for the Tableau map. 
+
+All the datasets used are attached in this repository.
 
 Some of the findings using PowerBI to analyse the data are as follows:
 
