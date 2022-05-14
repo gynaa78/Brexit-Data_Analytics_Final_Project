@@ -11,6 +11,7 @@ BELOW ARE EXCERPTS FROM THE CONTENTS OF THIS REPOSITORY (For a better read and v
 
 
 
+
 EXCEL :  The uploaded EXCEL file is named as referendum analysis for Final Data Project.xls
 
 The dataset constituted two tables  - Referendum and Census.
@@ -27,6 +28,7 @@ I also used the IF formula below to create a new column - COLUMN V, to show whet
 To count the number of areas that voted leave, I used the COUNTIF formula which gave the answer 263
 
 And to count the number of areas that voted remain, COUNTIF gave the answer 119
+
 
 
 
@@ -49,6 +51,8 @@ Gibraltar	: 95.91, Lambeth : 78.62, Hackney : 78.48, Haringey : 75.57, City of L
 -- Top five areas that supported leave with their Percent_Leave
 
 Boston: 75.56, South Holland: 73.59, Castle Point:	72.7, Thurrock:	 72.28, Great Yarmouth:	 71.5
+
+
 
 
 
