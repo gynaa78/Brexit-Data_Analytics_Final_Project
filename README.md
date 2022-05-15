@@ -61,6 +61,11 @@ DATA VISUALISATIONS
 I used mostly POWERBI for the data visualisation and made use of its Q & A function as well as its Smart Narrative to analyse the data.
 However, I also used Pandas, Seaborn and tableau to create additional visualisations such as using tableau to create an area map of UK to show the average percent LEAVE and the average percent REMAIN for BREXIT.
 
+The visualisations I created using Python (Pandas and Seaborn) can be accessed using the following link:
+
+https://colab.research.google.com/drive/1j_DTk1izgJTEAskfrdgq1wWVwJ0aq8V5?usp=sharing
+
+
 A different dataset was used for the Tableau map. 
 
 All the datasets used are attached in this repository.
