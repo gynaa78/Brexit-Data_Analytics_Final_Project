@@ -7,6 +7,12 @@ ABOUT THIS PROJECT:
 
 A referendum was held on the 23 June 2016 to decide whether the United Kingdom should remain a member of the European Union or leave. This project looks into Brexit to analyse findings  using EXCEL, Tableau, PowerBI, MySQL, & Python (Pandas & Seaborn) to draw meaningful conclusions from related databases as appended.
 
+Take a look at my presentation that summarises my time at the NIYO Bootcamp and what my final project entails. Click on link below to see the presentation:
+
+https://www.canva.com/design/DAE_yFNKXjA/2YlDRYgs2-BzM9bEEQlNWA/view?utm_content=DAE_yFNKXjA&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel
+
+
+
 BELOW ARE EXCERPTS FROM THE CONTENTS OF THIS REPOSITORY (For a better read and view of the tables attached, click on Raw).
 
 
