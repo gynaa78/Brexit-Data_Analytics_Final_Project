@@ -21,7 +21,7 @@ https://www.canva.com/design/DAE_yFNKXjA/2YlDRYgs2-BzM9bEEQlNWA/view?utm_content
 
 
 The Story told:
-Being given the dataset, I used Excel formulas and statistal functions to firstly analyse the data, then used SQL for further analysis via queries and sub queries. I then used Power BI and Tableau to create the visualisations based on the results from the Excel and SQL analysis. I also used python (Pandas and Seaborn) to create visualisations.
+Being given the dataset, I used Excel formulas and statistical functions to firstly analyse the data, then used SQL for further analysis via queries and sub queries. I then used Power BI and Tableau to create the visualisations based on the results from the Excel and SQL analysis. I also used python (Pandas and Seaborn) to create visualisations.
 
 The Brexit story goes like this:
 
